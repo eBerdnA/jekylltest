@@ -5,10 +5,10 @@ build:
     - bundle-install
 
     # Execute jeykyll doctor command to validate the
-    # site against a list of known issues
+    # site against a list of known issues.
     - script:
         name: jekyll doctor
-        code: bundle exec jeykll doctor
+        code: bundle exec jekyll doctor
     - script:
         name: sass compile
         code: |-
