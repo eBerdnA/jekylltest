@@ -1,0 +1,12 @@
+---
+layout: default
+page-class: page-home
+---
+{% for post in paginator.posts %}
+  <article class="post">
+    <header class="entry-header">
+      <h1 class="entry-title">
+        <a href="{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">{{ post.title }}</a>
+      </h1>
+    </header>
+  </article>
